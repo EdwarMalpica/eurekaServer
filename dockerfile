@@ -8,4 +8,4 @@ WORKDIR /opt
 COPY target/*.jar /opt/app.jar
 
 #Se especifica el punto de entrada para el contenedor Docker
-ENTRYPOINT exec java $JAVA_OPTS -jar app-jar .
+ENTRYPOINT exec java $JAVA_OPTS -jar app-jar
