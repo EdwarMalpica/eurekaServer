@@ -1,5 +1,5 @@
 # Se utiliza una imagen de OpenJdk 17 como base
-FROM openjdk:17-jdl-slim
+FROM openjdk:17-jdk-slim
 
 #Se establece el directorio de trabajo en /opt
 WORKDIR /opt
