@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /opt
 
 #Se copia el archivo JAR generado por Maven en la carpeta
-COPY target/*.jar /opt/app.jar
+COPY dist/*.jar /opt/app.jar
 
 #Se especifica el punto de entrada para el contenedor Docker
 ENTRYPOINT exec java $JAVA_OPTS -jar app-jar
